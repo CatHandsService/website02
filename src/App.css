@@ -1,0 +1,107 @@
+#root {
+  max-width: 1280px;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  text-align: center;
+  /* font-family: 'Inika', serif; */
+  /* font-family: 'Borel', cursive; */
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+}
+
+h2{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.border{
+  border: 1px solid #000;
+}
+
+.nav-off{
+  top: -100px;
+}
+
+.nav-on{
+  top: 50%;
+}
+
+.menu-off{
+  transform: rotateX(0);
+}
+
+.menu-on{
+  transform: rotateX(180deg);
+}
+
+.to-top{
+  animation: to-top .3s linear both;
+}
+
+.to-bottom{
+  animation: to-bottom .3s linear both;
+}
+
+.to-left{
+  animation: to-left .3s linear both;
+}
+
+.to-right{
+  animation: to-right .3s linear both;
+}
+
+@keyframes to-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes to-top {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes to-left {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes to-right {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+}
